@@ -38,6 +38,7 @@ df.aggregate(['min','mean','median','max'])
 #boxplot of all cols
 df.boxplot()
 # Correlation coefficients: all against all 
+df.corr()
 
 
 # Subset of the df
@@ -53,7 +54,6 @@ df3[(df3.col2>10) | (df3.col1=='r1')]
 
 lst2=[['c','d','e'], [7,10,15], [14,20,30], [21,30,45]]
 df2=pd.DataFrame(lst2[1:], columns=lst2[0])
-df.corr()
 
 # Correlation of df with df2 : row-wise
 df2.corrwith(df, axis=0)
