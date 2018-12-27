@@ -39,6 +39,11 @@ df.aggregate(['min','mean','median','max'])
 df.boxplot()
 # Correlation coefficients: all against all 
 df.corr()
+# standard deviation
+df.std()
+# variance
+df.var()
+#
 
 
 # Subset of the df
