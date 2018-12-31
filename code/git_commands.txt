@@ -1,0 +1,42 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Dec 31 10:19:33 2018
+
+@author: swapnil
+"""
+
+#link to gitlab
+https://gitlab.lji.org
+#link to github
+https://github.com
+
+# to check git username and email
+git config --list
+
+#
+#### SSH access to git
+# ssh key generation
+# commandline
+$ ssh-keygen
+
+# Copy the key from file below to gitlab
+/home/mbabor/.ssh/id_rsa
+
+
+# To get repository on your local
+git clone https://gitlab.lji.org/swapnil/test.git
+
+# To add files
+git add readme
+git add *.tsv
+
+# Remove git files
+git rm readme2
+
+# To commit on your local
+git commit -m "Added readme"
+
+# Go back to previous commit (Plz note that you'll loose all the commits after last commit number)
+
+# To change branch or overwrite the current branch
+git checkout

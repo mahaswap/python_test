@@ -20,6 +20,13 @@ print(list(df.columns))
 print(df.loc[0,'a'])
 # column
 print(df['a'])
+#or
+print(df.a)
+
+# Change indices
+df.index=['r1','r2']
+# The first row and first col element
+df.iloc[0,0]
 
 # Create df from dict
 dict1={'col1':['r1','r2','r3','r3'], 'col2':[5,10,15,20]}
@@ -28,6 +35,8 @@ df3=pd.DataFrame.from_dict(dict1)
 
 # Summary stats of all cols
 df.describe()
+# for a column
+df.a.describe()
 # Quantiles
 # 90th percentile
 df.a.quantile(0.9)
